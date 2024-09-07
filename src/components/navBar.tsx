@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import logo from '@/assets/logo.png'
+import Link from "next/link";
 export default function NavBar(): React.ReactNode {
     return (
         <>
@@ -11,7 +12,7 @@ export default function NavBar(): React.ReactNode {
                     <div className="nav_container_right">
                         <button className="nav_buttons">DASHBOARD</button>
 
-                        <button className="nav_buttons">LOGIN</button>
+                        <button className="nav_buttons"><Link href={"/auth/login"}>LOGIN</Link></button>
                     </div>
                 </div>
             </div>
